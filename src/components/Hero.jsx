@@ -13,7 +13,7 @@ const Hero = () => {
                 </p>
             </div>
             <div className=" w-1/2 md:pl-80">
-                <div className="uppercase bg-white rounded-full h-44 w-44 flex justify-center items-center">
+                <div className="uppercase bg-white rounded-full h-44 w-44 flex justify-center items-center hover:border-blue-500 hover:border-8">
                      Explore
                 </div>
             </div>
