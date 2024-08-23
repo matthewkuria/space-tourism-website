@@ -2,8 +2,8 @@ import logo from "../assets/shared/logo.svg"
 import closebtn from "../assets/shared/icon-hamburger.svg"
 const NavBar = () => {
     return (
-        <nav className=" relative  h-20 flex  justify-between mt-10 items-center p-0 text-white">
-            <div className="nav-logo pl-10">
+        <nav className=" relative  h-20 flex  justify-between mt-10 items-center p-5 md:p-0 text-white">
+            <div className="nav-logo md:pl-10 p-5">
                 <img src={logo} alt="nav-logo image"/>
             </div>
             <div className=" absolute left-20 right-0  h-[0.5px] bg-white w-1/3"></div>
