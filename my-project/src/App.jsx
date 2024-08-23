@@ -1,5 +1,9 @@
+import NavBar from "./components/Navbar";
+
 export default function App() {
   return (
-    <h1 className="text-2xl text-red-600">My App here</h1>
+    <main className="HOME">
+        <NavBar />
+    </main>
   )
 }
