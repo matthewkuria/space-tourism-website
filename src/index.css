@@ -7,6 +7,20 @@ body{
      width: 100vw;
      background: url("./assets/home/background-home-desktop.jpg") center center;
 }
+@media screen and (max-width:936px){
+  body{
+          height: 100vh;
+          width: 100vw;
+          background: url("./assets/home/background-home-tablet.jpg") center center cover no-repeat;
+     }
+}
+@media screen and (max-width:576px) {
+     body{
+          height: 100vh;
+          width: 100vw;
+          background: url("./assets/home/background-home-mobile.jpg") center center cover;
+     }
+}
 ol li{
      list-style-type: decimal-leading-zero;
 }
