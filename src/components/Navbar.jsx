@@ -4,7 +4,9 @@ const NavBar = () => {
     return (
         <nav className=" relative  h-20 flex  justify-between mt-10 items-center p-5 md:p-0 text-white">
             <div className="nav-logo md:pl-10 p-5">
-                <img src={logo} alt="nav-logo image"/>
+                <a href={`/`}>
+                    <img src={logo} alt="nav-logo image"/>
+                </a>
             </div>
             <div className=" absolute left-32 right-0  h-[0.5px] bg-white w-1/3"></div>
             <div className="nav-items bg-transparent backdrop-blur-md w-2/3 px-10">

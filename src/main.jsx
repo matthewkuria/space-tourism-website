@@ -7,6 +7,7 @@ import ErrorPage from './error-page.jsx'
 import Destination from './routes/destination.jsx'
 import Crew from './routes/crew.jsx'
 import Technology from './routes/technology.jsx'
+import Hero from './components/Hero.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,11 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     // Nesting other routes inside the app route(Root Route)
     children: [
+      {
+        path: "/",
+        element:<Hero />
+
+      },
       {
       path: "/destination",
         element: <Destination />
