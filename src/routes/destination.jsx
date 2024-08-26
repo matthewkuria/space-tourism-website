@@ -1,6 +1,6 @@
 const Destination = () => {
     return (
-        <main className="">
+        <main className="text-white">
             <h1>This is the destination page</h1>
         </main>
     )

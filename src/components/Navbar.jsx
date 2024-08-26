@@ -11,8 +11,8 @@ const NavBar = () => {
                 <ol className=" hidden md:flex lg:flex justify-around items-center uppercase list-decimal h-20 pr-10">
                 <li className=" border-b-2 hover:border-b-2 py-7 px-4"><a href={`/`}>home</a></li>
                 <li className="hover:border-b-2 py-7 px-4"><a href={`/destination`}>destination</a></li>
-                <li className="hover:border-b-2 py-7 px-4"><a href="">crew</a></li>
-                <li className="hover:border-b-2 py-7 px-4"><a href="">technology</a></li>
+                <li className="hover:border-b-2 py-7 px-4"><a href={`/crew`}>crew</a></li>
+                <li className="hover:border-b-2 py-7 px-4"><a href={`/technology`}>technology</a></li>
             </ol>
             </div>
             <div className="hamburger-icon flex md:hidden">
