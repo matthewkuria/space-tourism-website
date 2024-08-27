@@ -62,7 +62,7 @@ const Destination = () => {
                                     style={{ width: '100%', borderRadius: '8px' }}
                                     />
                                     </div>
-                                <div className="">
+                                <div className="w-full md:w-1/2">
                                     <Typography>{item.description}</Typography>
                                     <div className="flex justify-between mt-10 ">
                                         <div className="flex flex-col">
