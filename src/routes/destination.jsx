@@ -84,7 +84,7 @@ const Destination = () => {
                                 </Tab>
                             </TabsList>
                             <TabPanel className="w-full font-sans text-sm" value={1}>
-                                First page
+                                <h1 className='uppercase text-3xl'>Moon</h1>
                             </TabPanel>
                             <TabPanel className="w-full font-sans text-sm" value={2}>
                                 Second page
