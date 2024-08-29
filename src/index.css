@@ -38,3 +38,18 @@ ol li{
      height: 100vh;
      background: url("./assets/destination/background-destination-desktop.jpg");
 }
+
+/* Custom styles for tabs */
+.react-tabs__tab {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.react-tabs__tab-panel {
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
