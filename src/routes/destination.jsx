@@ -23,16 +23,12 @@ const Destination = () => {
       .then((response) => response.json())
       .then((data) => setData(data.destinations))
       .catch((error) => console.error('Error fetching data:', error));
-  }, []);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-    };
+  }, []);  
     return (
         <section className='destination'>
-            <h1 className="uppercase text-white text-2xl py-10"><span className="text-slate-500">01</span> Pick your destination</h1>
+            <h1 className="uppercase text-white text-2xl pt-20 pl-20"><span className="text-slate-500">01</span> Pick your destination</h1>
             <Tabs>
-            <TabList className="flex justify-end md:mr-28 uppercase md:pt-10">
+            <TabList className="flex justify-end md:mr-28 uppercase md:pt-8">
                 {Array.isArray(data) && data.map((item, index) => (
                 <Tab key={index}>{item.name}</Tab>
                 ))}
@@ -44,7 +40,7 @@ const Destination = () => {
                     <img
                         src={imageMap[item.images.png]}
                         alt={item.title}
-                        style={{ width: '100%', borderRadius: '8px' }}
+                        style={{ width: '90%', borderRadius: '8px' }}
                     />
                     </div>
                     <div className="flex flex-col text-white w-1/2">

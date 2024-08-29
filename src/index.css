@@ -40,6 +40,9 @@ ol li{
 }
 
 /* Custom styles for tabs */
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+}
 .react-tabs__tab {
   background-color: transparent;
   color: #fff;
@@ -48,8 +51,14 @@ ol li{
   cursor: pointer;
   border-radius: 4px;
 }
+.react-tabs__tab--selected{
+     background-color: transparent !important;
+     color: #fff !important;
+     border: none !important;
+}
 .react-tabs__tab-panel {
   padding: 20px;
   border-radius: 4px;
   margin-top: 10px;
+  background-color: transparent;
 }
