@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Tabs, Tab, Box, Typography } from '@mui/material';
-
 import imageMoon from "../assets/destination/image-moon.png"
 import imageMars from "../assets/destination/image-mars.png"
 import imageEuro from "../assets/destination/image-europa.png"
@@ -13,9 +12,6 @@ const imageMap = {
     'image-titan.png': imageTitan
     
 };
-
-
-
 const Destination = () => {
     const [data, setData] = useState([])
     const [value, setValue] = useState(0);
@@ -31,8 +27,6 @@ const Destination = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
     };
-
-
     const TabPanel = ({ children, value, index }) => {
   return (
     <div role="tabpanel" hidden={value !== index}>
@@ -47,7 +41,7 @@ const Destination = () => {
               
                 <div className="w-full ">
                     <Box sx={{ width: '100%' }}>
-                        <Tabs className='ml-96' value={value} onChange={handleChange} aria-label="simple tabs">
+                        <Tabs className='ml-96 text-white' value={value} onChange={handleChange} aria-label="simple tabs">
                             {Array.isArray(data) && data.map((item, index) => (
                             <Tab key={index} label={item.name} />
                             ))}
