@@ -60,7 +60,7 @@ body {
      }
 }
 @media (min-width:768px ){
-      body{
+     body{
           background: url("./assets/home/background-home-desktop.jpg");
      }
 }
