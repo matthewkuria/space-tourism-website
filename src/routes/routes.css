@@ -1,3 +1,12 @@
+/* //* Specific CSS rules for pages components */
+:root {
+  --main-color-dark-blue: #0b0d17;
+  --main-color-white: #ffffff;
+  --main-color-light-blue: #d0d6f9;
+  --font-family-h5-subh2-nav-des: "Barlow Condensed', sans-serif";
+  --font-family-h1-4-sub1: "Bellefair", serif;
+}
+
 /* Mobile first design */
 .crew {
   background-image: url("../assets/crew/background-crew-mobile.jpg");
@@ -7,4 +16,9 @@
   height: 100vh;
   width: auto;
   overflow-y: scroll;
+}
+@media (min-width: 768px) {
+  .crew{
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+  }
 }
