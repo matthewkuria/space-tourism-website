@@ -1,6 +1,15 @@
+import { useState } from "react";
 const Hero = () => {
+    const [exploreBg, setExploreBg] = useState(false);
+
+    const handleBgOpen = () => setExploreBg(true);
+    const handleBgClose = () => setExploreBg(false);
+
+    const onMouseStyle = {
+     opacity: exploreBg ? 1 : 0,
+    };
     return (
-        <section className="flex flex-col md:flex-row mt-36 pl-10 items-center">
+        <section className="flex flex-col md:flex-row mt-24 pl-10 items-center">
             <div className="text-white md:w-1/2 p-10">
                 <p className=" uppercase font-thin">
                     So, you want to travel to
@@ -14,12 +23,12 @@ const Hero = () => {
                     Well sit back,and relax because we&#39;ll give you a truly out of this world experience!
                 </p>
             </div>
-            <div className="explore-container w-1/2 md:pl-80">
-                <div className=" explore-btn-bg uppercase bg-white rounded-full  flex justify-center items-center ">
-                   <button className="explore-btn"><a href={`/destination`}>Explore</a></button>
-                </div>
-            </div>
-
+            <article className="explore-btn-container w-1/2">
+                <div onMouseOver={handleBgOpen} onMouseOut={handleBgClose}>
+                    <div className="explore-btn-bg" style={onMouseStyle}></div>
+                        <button className="explore-btn"><a href={`/destination`}>Explore</a></button>                    
+                    </div>
+            </article>
         </section>
     )
 }
