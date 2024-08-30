@@ -36,8 +36,8 @@ const Crew = () => {
                 <section className="md:px-24">
                     {Array.isArray(data) && data.map((item, index) => (
                     <TabPanel key={index}>
-                    <div className='flex flex-col md:flex-row md:mt-10'>                        
-                        <div className="flex flex-col text-white w-1/2">
+                    <div className='flex flex-col justify-center items-center md:flex-row md:mt-10'>                        
+                        <div className="flex flex-col text-white md:w-1/2">
                             <p>{item.role}</p>
                             <h2 className='uppercase text-7xl'>{item.name}</h2>
                             <p>{item.bio}</p>                        
@@ -45,8 +45,7 @@ const Crew = () => {
                         <div className=''>
                             <img
                                 src={imageMap[item.images.png]}
-                                alt={item.name}
-                                style={{ width: '90%', height: '90%' }}
+                                alt={item.name}                                
                             />
                         </div>
                     </div>
@@ -54,7 +53,7 @@ const Crew = () => {
                         ))}
                         <TabList className="flex justify-start  uppercase md:my-6 ">
                         {Array.isArray(data) && data.map((item, index) => (
-                            <button key={index}
+                            <Tab key={index}
                                 className="crew-btn"
                                 onClick={() => setValue(index)}
                                 style={{
@@ -62,7 +61,7 @@ const Crew = () => {
                                 }}
                             >
                             
-                        </button>
+                        </Tab>
                         ))}
                     </TabList>
                 </section>

@@ -16,7 +16,6 @@ const imageMap = {
 };
 const Destination = () => {
     const [data, setData] = useState([])
-    const [value, setValue] = useState(0);
     // Fetch data from the  JSON file
      useEffect(() => {
     // Fetch data from the JSON file
