@@ -1,5 +1,20 @@
 import { useState, useEffect } from "react";
 import "./routes.css";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import imageHurley from "../assets/crew/image-douglas-hurley.png"
+import imageShuttle from "../assets/crew/image-mark-shuttleworth.png"
+import imageGlover from "../assets/crew/image-victor-glover.png"
+import imageAnsari from "../assets/crew/image-anousheh-ansari.png"
+
+const imageMap = {
+    'image-douglas-hurley.png': imageHurley,
+    'image-mark-shuttleworth.png': imageShuttle,
+    'image-victor-glover.png': imageGlover,
+    'image-anousheh-ansari.png': imageAnsari
+    
+};
+
 const Crew = () => {
     const [data, setData] = useState([])
     const [value, setValue] = useState(0);
@@ -8,7 +23,7 @@ const Crew = () => {
     // Fetch data from the JSON file
     fetch('/data.json')
       .then((response) => response.json())
-      .then((data) => setData(data.destinations))
+      .then((data) => setData(data.crew))
       .catch((error) => console.error('Error fetching data:', error));
   }, []);
     return (
@@ -17,6 +32,41 @@ const Crew = () => {
                 <span className="text-slate-500">02</span>
                 Meet your crew
             </h1>
+            <Tabs>
+                <section className="md:px-24">
+                    {Array.isArray(data) && data.map((item, index) => (
+                    <TabPanel key={index}>
+                    <div className='flex flex-col md:flex-row md:mt-10'>                        
+                        <div className="flex flex-col text-white w-1/2">
+                            <p>{item.role}</p>
+                            <h2 className='uppercase text-7xl'>{item.name}</h2>
+                            <p>{item.bio}</p>                        
+                        </div>
+                        <div className=''>
+                            <img
+                                src={imageMap[item.images.png]}
+                                alt={item.name}
+                                style={{ width: '90%', height: '90%' }}
+                            />
+                        </div>
+                    </div>
+                    </TabPanel>
+                        ))}
+                        <TabList className="flex justify-start  uppercase md:my-6 ">
+                        {Array.isArray(data) && data.map((item, index) => (
+                            <button key={index}
+                                className="crew-btn"
+                                onClick={() => setValue(index)}
+                                style={{
+                                backgroundColor: index === value ? "white" : "#979797",
+                                }}
+                            >
+                            
+                        </button>
+                        ))}
+                    </TabList>
+                </section>
+            </Tabs>
 
             
        </div>
