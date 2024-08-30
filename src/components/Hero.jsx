@@ -14,9 +14,9 @@ const Hero = () => {
                     Well sit back,and relax because we&#39;ll give you a truly out of this world experience!
                 </p>
             </div>
-            <div className=" w-1/2 md:pl-80">
-                <div className="uppercase bg-white rounded-full h-44 w-44 flex justify-center items-center hover:border-blue-500 hover:border-8">
-                   <a href={`/destination`}>Explore</a>
+            <div className="explore-container w-1/2 md:pl-80">
+                <div className=" explore-btn-bg uppercase bg-white rounded-full  flex justify-center items-center ">
+                   <button className="explore-btn"><a href={`/destination`}>Explore</a></button>
                 </div>
             </div>
 

@@ -26,9 +26,9 @@ const Destination = () => {
   }, []);  
     return (
         <section className='destination'>
-            <h1 className="uppercase text-white text-2xl pt-20 pl-20"><span className="text-slate-500">01</span> Pick your destination</h1>
+            <h1 className="uppercase  text-white text-2xl pt-12 pb-0 pl-20"><span className="text-slate-500">01</span> Pick your destination</h1>
             <Tabs>
-            <TabList className="flex justify-end md:mr-28 uppercase md:pt-8">
+            <TabList className="flex justify-end md:mr-28 uppercase ">
                 {Array.isArray(data) && data.map((item, index) => (
                 <Tab key={index}>{item.name}</Tab>
                 ))}
@@ -40,7 +40,7 @@ const Destination = () => {
                     <img
                         src={imageMap[item.images.png]}
                         alt={item.title}
-                        style={{ width: '90%', borderRadius: '8px' }}
+                        style={{ width: '90%', height: '90%' }}
                     />
                     </div>
                     <div className="flex flex-col text-white w-1/2">
