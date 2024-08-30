@@ -56,38 +56,18 @@ body {
 }
 @media (min-width:576px ){
   body{
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     height: 100vh;
-     width: auto;
-     overflow-y: scroll;
      background: url("./assets/home/background-home-tablet.jpg");
      }
 }
 @media (min-width:768px ){
       body{
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     height: 100vh;
-     width: auto;
-     overflow-y: scroll;
-     background: url("./assets/home/background-home-desktop.jpg");
+          background: url("./assets/home/background-home-desktop.jpg");
      }
 }
 
 ol li{
      list-style-type: decimal-leading-zero;
 }
-
-
-.destination{
-     width: 100vw;
-     height: 100vh;
-     background: url("./assets/destination/background-destination-desktop.jpg");
-}
-
 /* Custom styles for tabs */
 .react-tabs {
   -webkit-tap-highlight-color: transparent;

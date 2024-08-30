@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./routes.css";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import imageMoon from "../assets/destination/image-moon.png"
