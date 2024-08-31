@@ -45,7 +45,8 @@ const Crew = () => {
                         <div className=''>
                             <img
                                 src={imageMap[item.images.png]}
-                                alt={item.name}                                
+                                alt={item.name} 
+                                className="crew-image"                               
                             />
                         </div>
                     </div>
