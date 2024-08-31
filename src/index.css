@@ -58,11 +58,18 @@ body {
   body{
      background: url("./assets/home/background-home-tablet.jpg");
      }
+     .explore-btn-container {
+      width: 50%;
+    }
+
 }
 @media (min-width:768px ){
      body{
           background: url("./assets/home/background-home-desktop.jpg");
      }
+      .explore-btn-container {
+      width: 50%;
+    }
 }
 
 ol li{

@@ -23,7 +23,7 @@ const Hero = () => {
                     Well sit back,and relax because we&#39;ll give you a truly out of this world experience!
                 </p>
             </div>
-            <article className="explore-btn-container w-1/2">
+            <article className="explore-btn-container mt-0">
                 <div onMouseOver={handleBgOpen} onMouseOut={handleBgClose}>
                     <div className="explore-btn-bg" style={onMouseStyle}></div>
                         <button className="explore-btn"><a href={`/destination`}>Explore</a></button>                    
