@@ -36,7 +36,7 @@ const Crew = () => {
                 <section className="md:px-24">
                     {Array.isArray(data) && data.map((item, index) => (
                     <TabPanel key={index}>
-                    <div className='flex flex-col justify-center items-center md:flex-row md:mt-0'>                        
+                    <div className='flex flex-col justify-center items-center md:flex-row mt-5 md:mt-0'>                        
                         <div className="flex flex-col text-white md:w-1/2">
                             <h1 className="uppercase text-slate-400 text-3xl py-2">{item.role}</h1>
                             <h1 className='uppercase text-7xl py-2'>{item.name}</h1>
