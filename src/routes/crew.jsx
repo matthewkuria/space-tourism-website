@@ -38,8 +38,8 @@ const Crew = () => {
                     <TabPanel key={index}>
                     <div className='flex flex-col justify-center items-center md:flex-row md:mt-10'>                        
                         <div className="flex flex-col text-white md:w-1/2">
-                            <p>{item.role}</p>
-                            <h2 className='uppercase text-7xl'>{item.name}</h2>
+                            <h1 className="uppercase text-slate-400 text-3xl">{item.role}</h1>
+                            <h1 className='uppercase text-7xl'>{item.name}</h1>
                             <p>{item.bio}</p>                        
                         </div>
                         <div className=''>
