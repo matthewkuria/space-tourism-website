@@ -1,7 +1,7 @@
 const Technology = () => {
     return (
         <main className="text-white">
-            <h1> Tech page</h1>
+            <h1>SPACE LAUNCH 101</h1>
         </main>
     )
 }
