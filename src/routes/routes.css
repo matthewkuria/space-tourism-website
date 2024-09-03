@@ -63,6 +63,14 @@
   width: auto;
   overflow-y: scroll;
 }
+.technology-btn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
 /* Responsiveness */
 @media (min-width: 768px){
   .crew{

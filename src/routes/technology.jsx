@@ -37,7 +37,21 @@ const Technology = () => {
         <main className="text-white  technology">
             <h1>SPACE LAUNCH 101</h1>
             <Tabs>
-                <section className="">
+                <section className="md:flex">
+                    <TabList className="flex flex-col font-semibold text-center  uppercase  ">
+                    {Array.isArray(data) && data.map((item, index) => (
+                        <Tab key={index}
+                            className="technology-btn"
+                            onClick={() => setValue(index)}
+                            style={{
+                                backgroundColor: index === value ? "white" : "white",
+                                color:"black"
+                            }}
+                        >
+                        {item.name}
+                    </Tab>
+                    ))}
+                </TabList>
                 {Array.isArray(data) && data.map((item, index) => (
                     <TabPanel key={index}>
                         <div className='flex flex-col justify-center items-center md:flex-row mt-5 md:mt-0'>                        
@@ -60,19 +74,7 @@ const Technology = () => {
                         </div>
                     </TabPanel>
                 ))}
-                <TabList className="flex justify-start  uppercase md:my-6 ">
-                    {Array.isArray(data) && data.map((item, index) => (
-                        <Tab key={index}
-                            className="crew-btn"
-                            onClick={() => setValue(index)}
-                            style={{
-                            backgroundColor: index === value ? "white" : "#979797",
-                            }}
-                        >
-                        
-                    </Tab>
-                    ))}
-                </TabList>
+                
             </section>
             </Tabs>
         </main>
