@@ -37,9 +37,9 @@ const Technology = () => {
         <main className="text-white  technology">
             <h1 className="md:mt-6 pl-10">SPACE LAUNCH 101</h1>
             <Tabs>
-                <section className="md:flex">
-                    <TabList className="flex flex-col font-semibold text-center  uppercase  ">
-                    {Array.isArray(data) && data.map((item, index) => (
+                <section className="md:flex pt-36 md:p-4">                    
+                    <TabList className="flex justify-around md:flex-row lg:flex-row font-semibold text-center  uppercase ">
+                    {Array.isArray(data) && data.map((item, index) => (                                                 
                         <Tab key={index}
                             className="technology-btn"
                             onClick={() => setValue(index)}
@@ -48,7 +48,7 @@ const Technology = () => {
                             }}
                         >
                        <p className=""> {item.id}</p>
-                    </Tab>
+                    </Tab>                        
                     ))}
                 </TabList>
                 {Array.isArray(data) && data.map((item, index) => (
@@ -64,12 +64,13 @@ const Technology = () => {
                                     src={imageMap2[item.images.portrait]}
                                     alt={item.name} 
                                     className="technology-image hidden md:block"                               
-                                />
+                                /> 
                                 <img
                                     src={imageMap[item.images.landscape]}
                                     alt={item.name} 
-                                    className="technology-image block md:hidden"                               
+                                    className="technology-image block md:hidden absolute top-0 left-0"                               
                                 />
+                            
                             </div>
                         </div>
                     </TabPanel>

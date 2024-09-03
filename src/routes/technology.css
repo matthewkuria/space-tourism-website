@@ -6,6 +6,8 @@
   border-bottom: 1px solid #aaa;
   margin: 0 0 10px;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .react-tabs__tab {
@@ -62,16 +64,17 @@
   height: 100vh;
   width: auto;
   overflow-y: scroll;
+  position: relative;
 }
 .technology-btn{
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   justify-content: center;
   width: 80px;
   height: 80px;
   border: 2px solid #ffffff;
   border-radius: 50%;
-  color: white !important;
+  color: white;
 }
 
 /* Responsiveness */
