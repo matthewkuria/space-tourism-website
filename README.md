@@ -17,7 +17,6 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -48,10 +47,9 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+-[TailwindCSS](https://tailwindcss.com/) - Mobile first class based CSS for Styling
+-[React Router](https://reactrouter.com/en/main) - For navigation and routing
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -59,7 +57,8 @@ I have learnt how to effectively use React Router to navigate through the websit
 
 To see how you can add code snippets, see below:
 
-```Array.map
+```
+Array.map to fetch data from .json file using useEffect() Hook
 {Array.isArray(data) && data.map((item, index) => (
     <Tab key={index}
         className="crew-btn"
@@ -72,7 +71,8 @@ To see how you can add code snippets, see below:
 </Tab>
 ))}
 ```
-```tailwindCSS especially the backdrop-blur
+```
+tailwindCSS especially the backdrop-blur
 export default function NavLinks() {
     return (
         <div className="nav-items bg-transparent backdrop-blur-md w-2/3 px-10">
@@ -120,27 +120,23 @@ const router = createBrowserRouter([
 
 
 ### Continued development
+I have had a challenge applying different background images depending on the route selected.I will be doing more research on how to  improve the website.
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [React Router](https://reactrouter.com/en/main/start/tutorial#setup) - This helped me to set up the website and nested my routes. I really liked this pattern and will use it going forward.
+- [React Tabs](https://www.npmjs.com/package/react-tabs) - This is an amazing article which helped me understand how to use react-tabs since I tried Material UI tabs which had peerdependencies conflicts which couldn't resolve. I'd recommend it to anyone still learning this concept.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [Add your name here](https://www.matthewkuria.vercel.app)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/matthew-kuria)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+I would like to acknowledge Frontendmentor for coming up with  this challenge project and also all the contributors of StackOverFlow for their great contributions.
