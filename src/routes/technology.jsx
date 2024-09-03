@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./routes.css";
+import "./technology.css";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import imageVehicle from "../assets/technology/image-launch-vehicle-landscape.jpg"
@@ -35,7 +35,7 @@ const Technology = () => {
   }, []);
     return (
         <main className="text-white  technology">
-            <h1>SPACE LAUNCH 101</h1>
+            <h1 className="md:mt-6 pl-10">SPACE LAUNCH 101</h1>
             <Tabs>
                 <section className="md:flex">
                     <TabList className="flex flex-col font-semibold text-center  uppercase  ">
@@ -44,19 +44,19 @@ const Technology = () => {
                             className="technology-btn"
                             onClick={() => setValue(index)}
                             style={{
-                                backgroundColor: index === value ? "white" : "white",
-                                color:"black"
+                                backgroundColor: index === value ? "white" : "transparent",
                             }}
                         >
-                        {item.name}
+                       <p className=""> {item.id}</p>
                     </Tab>
                     ))}
                 </TabList>
                 {Array.isArray(data) && data.map((item, index) => (
                     <TabPanel key={index}>
                         <div className='flex flex-col justify-center items-center md:flex-row mt-5 md:mt-0'>                        
-                            <div className="flex flex-col text-white md:w-1/2">
-                                <h1 className='uppercase text-7xl py-2'>{item.name}</h1>
+                            <div className="flex flex-col text-white md:w-1/3">
+                                <p className="uppercase">The terminology...</p>
+                                <h1 className='uppercase text-6xl py-2'>{item.name}</h1>
                                 <p>{item.description}</p>                        
                             </div>
                             <div className=''>
