@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import "./routes.css";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import imageHurley from "../assets/crew/image-douglas-hurley.png"
@@ -25,7 +26,7 @@ const Technology = () => {
       .catch((error) => console.error('Error fetching data:', error));
   }, []);
     return (
-        <main className="text-white">
+        <main className="text-white  technology">
             <h1>SPACE LAUNCH 101</h1>
             <p className="title text-5xl">LAUNCH VEHICLE</p>
             <section className="">
