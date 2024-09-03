@@ -7,7 +7,7 @@
   margin: 0 0 10px;
   padding: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 .react-tabs__tab {
@@ -18,7 +18,7 @@
   position: relative;
   list-style: none;
   padding: 6px 12px;
-  cursor: pointer;
+  cursor: help;
 }
 
 .react-tabs__tab--selected {

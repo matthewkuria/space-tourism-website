@@ -35,10 +35,13 @@ const Technology = () => {
   }, []);
     return (
         <main className="text-white  technology">
-            <h1 className="md:mt-6 pl-10">SPACE LAUNCH 101</h1>
+            <h1 className="uppercase  text-white text-2xl pt-12 pb-0 pl-20">
+                <span className="text-slate-500">02</span>
+                SPACE LAUNCH 101
+            </h1>
             <Tabs>
                 <section className="md:flex pt-36 md:p-4">                    
-                    <TabList className="flex justify-around md:flex-row lg:flex-row font-semibold text-center  uppercase ">
+                    <TabList className="flex justify-evenly md:flex md:flex-col lg:flex-col md:ml-40 font-semibold text-center ">
                     {Array.isArray(data) && data.map((item, index) => (                                                 
                         <Tab key={index}
                             className="technology-btn"
@@ -54,7 +57,7 @@ const Technology = () => {
                 {Array.isArray(data) && data.map((item, index) => (
                     <TabPanel key={index}>
                         <div className='flex flex-col justify-center items-center md:flex-row mt-5 md:mt-0'>                        
-                            <div className="flex flex-col text-white md:w-1/3">
+                            <div className="flex flex-col text-white md:w-1/2">
                                 <p className="uppercase">The terminology...</p>
                                 <h1 className='uppercase text-6xl py-2'>{item.name}</h1>
                                 <p>{item.description}</p>                        

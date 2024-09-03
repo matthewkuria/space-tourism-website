@@ -50,6 +50,7 @@
   background-color: #ffffff;
 }
 .crew-image{
+
   width: 250px;
   height: 350px;
   margin-left: 0px;
@@ -64,7 +65,7 @@
   .crew-image{
   width: 250px;
   height: 350px;
-  margin-left: 250px;
+  margin-left: 100px;
 }
 
 }
@@ -72,5 +73,9 @@
   .crew{
     background-image: url("../assets/crew/background-crew-desktop.jpg");
   }
-  
+    .crew-image{
+  width: 250px;
+  height: 350px;
+  margin-left: 250px;
+    }
 }
