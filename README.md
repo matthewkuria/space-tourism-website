@@ -132,9 +132,9 @@ I have had a challenge applying different background images depending on the rou
 
 ## Author
 
-- Website - [Add your name here](https://www.matthewkuria.vercel.app)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/matthew-kuria)
+- Website - [My portifolio](https://www.matthewkuria.vercel.app)
+- Frontend Mentor - [@matthewkuria](https://www.frontendmentor.io/profile/matthewkuria)
+- Twitter - [@matthew-kuria](https://www.twitter.com/matthew-kuria)
 
 
 ## Acknowledgments
