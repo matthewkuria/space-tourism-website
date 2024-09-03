@@ -43,7 +43,7 @@ const Destination = () => {
                         style={{ width: '90%', height: '90%' }}
                     />
                     </div>
-                    <div className="flex flex-col text-white w-1/2">
+                    <div className="flex flex-col text-white w-full md:w-1/2">
                         <h2 className='uppercase text-7xl'>{item.name}</h2>
                         <p>{item.description}</p>
                         <div className="flex justify-between mt-10 ">
