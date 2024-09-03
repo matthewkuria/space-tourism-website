@@ -1,4 +1,3 @@
-import { Outlet } from "react-router-dom";
 import Hero from "./components/Hero";
 import NavBar from "./components/Navbar";
 
